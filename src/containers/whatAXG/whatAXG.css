@@ -1,0 +1,133 @@
+.axg__whataxg {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.axg__whataxg-feature {
+    display: flex;
+}
+
+.axg__whataxg-feature .axg__features-container-feature {
+    margin: 0;
+    
+}
+.axg__whataxg-feature .axg__features-container-feature-text {
+    max-width: 700px;
+
+}
+
+.axg__whataxg-heading {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.axg__whataxg-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 510px;
+
+}
+
+.axg__whataxg-heading p {
+    font-family: var(--font-family);;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.axg__whataxg-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+
+.axg__whataxg-container .axg__features-container-feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+
+.axg__whataxg-container .axg__features-container-feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .axg__whataxg-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .axg__whataxg-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .axg__whataxg-feature .axg__features-container-feature {
+        flex-direction: column;
+    }
+
+
+    .axg__whataxg-feature .axg__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .axg__whataxg-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .axg__whataxg-container .axg__features-container-feature {
+        margin: 0.5rem 0;
+        min-width: 100%;
+        padding: 0%;
+    }
+    .axg__whataxg-container .axg__features-container-feature-text{
+        margin: 0.5rem 0;
+        padding: 0%;
+    }
+
+    .axg__whataxg-heading h1 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-left: -0.75rem;
+    } 
+}
